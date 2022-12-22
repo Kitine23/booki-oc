@@ -13,6 +13,15 @@ button {
 button {
   cursor: pointer;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /* RESETS */
 
 body {
@@ -23,15 +32,6 @@ main {
   padding: 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.5rem;
-}
-
 p {
   margin-block: 0.5rem;
 }
@@ -40,6 +40,11 @@ h1,
 h2 {
   font-size: 1.375rem; /* 22px */
   font-weight: bold;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 /*NAV*/
@@ -166,31 +171,6 @@ button i {
   margin-bottom: 1.5rem;
 }
 
-/*lodging popular*/
-.lodging-popular {
-  width: 30%;
-}
-
-/*LODGING-CITY*/
-.lodging-city {
-  width: 70%;
-}
-
-.lodging-city button {
-  font-size: 1.125rem;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
-/*LODGING-CITY*/
-
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-}
-
 .card {
   background: white;
   border-radius: 20px;
@@ -201,20 +181,91 @@ button i {
   box-shadow: 0 0 16px #0000002e;
 }
 
+.card .card-content {
+  padding: 0.5rem;
+}
+
 .card > img {
   height: 124px;
   object-fit: cover;
 }
 
-.card .card-content {
-  padding: 0.5rem;
+.card.card-vertical {
+  flex-direction: row;
+  align-items: stretch;
 }
+
+.card.card-vertical > img {
+  width: 137px;
+  height: 144px;
+}
+
+.card.card-vertical .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card.card-vertical .card-content .stars {
+  margin-top: auto;
+}
+
+/*LODGING-CITY*/
+.lodging-city {
+  width: 70%;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lodging-city button {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/*LODGING-CITY*/
+
+/*LODGING-POPULAR*/
+.lodging-popular {
+  width: 30%;
+}
+
+.lodging-popular-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-icon {
+  color: #0065fc;
+  font-size: 1.125rem;
+}
+/*LODGING-POPULAR*/
 
 .stars {
   display: flex;
   flex-direction: row;
+  color: #0065fc;
 }
 
 .stars :last-child {
   color: #f2f2f2;
+}
+
+@media (max-width: 1439px) {
+  .lodging {
+    flex-direction: column;
+  }
+  .lodging-block {
+    width: 100%;
+  }
 }
