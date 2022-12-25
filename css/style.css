@@ -1,5 +1,6 @@
 /* RESETS */
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -210,6 +211,15 @@ button i {
   margin-top: auto;
 }
 
+.card.card-horizontal > img {
+  height: 444px;
+  width: 302px;
+}
+
+.card.card-horizontal .card-content {
+  display: flex;
+}
+
 /*LODGING-CITY*/
 .lodging-city {
   width: 70%;
@@ -251,6 +261,7 @@ button i {
 }
 /*LODGING-POPULAR*/
 
+/*STARS*/
 .stars {
   display: flex;
   flex-direction: row;
@@ -260,7 +271,7 @@ button i {
 .stars :last-child {
   color: #f2f2f2;
 }
-
+/*STARS*/
 @media (max-width: 1439px) {
   .lodging {
     flex-direction: column;
@@ -269,3 +280,48 @@ button i {
     width: 100%;
   }
 }
+
+/*ACTIVITIES*/
+
+.activities .card {
+  border: none;
+}
+
+.activities .card-list {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.activities > h2 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.activities .card-content {
+  padding: 1rem;
+}
+
+/*ACTIVITIES*/
+
+/*FOOTER*/
+footer {
+  padding: 2rem 2rem 0 2rem;
+}
+
+footer .footer-content {
+  display: flex;
+  gap: 10rem;
+  background-color: #f2f2f2;
+  padding: 3rem 5rem;
+}
+
+footer h3 {
+  padding-bottom: 1rem;
+}
+
+footer li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+}
+
+/*FOOTER*/
