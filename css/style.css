@@ -60,7 +60,73 @@ h2 {
   overflow: hidden;
   box-shadow: 0 0 16px #0000002e;
 }
+
+.card > img {
+  height: 124px;
+  object-fit: cover;
+}
+
+.card .card-content {
+  padding: 0.5rem;
+}
+
+/* VERTICAL CARDS*/
+.card.card-horizontal {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.card.card-horizontal > img {
+  width: 137px;
+  height: 144px;
+}
+
+.card.card-horizontal .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card.card-horizontal .card-content .stars {
+  margin-top: auto;
+}
+
+/* PORTRAIT CARDS*/
+.card.card-portrait {
+  border: none;
+}
+
+.card.card-portrait > img {
+  height: 444px;
+  width: 302px;
+}
+
+.card.card-portrait .card-content {
+  padding: 1rem;
+}
+
 /*CARDS*/
+
+/*LAYOUTS*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.list-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*LAYOUTS*/
 
 /*------------- BLOCKS ------------------*/
 
@@ -194,59 +260,9 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.card .card-content {
-  padding: 0.5rem;
-}
-
-.card > img {
-  height: 124px;
-  object-fit: cover;
-}
-
-.card.card-vertical {
-  flex-direction: row;
-  align-items: stretch;
-}
-
-.card.card-vertical > img {
-  width: 137px;
-  height: 144px;
-}
-
-.card.card-vertical .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.card.card-vertical .card-content .stars {
-  margin-top: auto;
-}
-
-.card.card-horizontal > img {
-  height: 444px;
-  width: 302px;
-}
-
-.card.card-horizontal .card-content {
-  display: flex;
-}
-
 /*LODGING-CITY*/
 .lodging-city {
   width: 70%;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-}
-
-.card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .lodging-city button {
@@ -254,7 +270,6 @@ main {
   font-weight: bold;
   margin-top: 2rem;
 }
-
 /*LODGING-CITY*/
 
 /*LODGING-POPULAR*/
@@ -285,35 +300,11 @@ main {
 }
 /*STARS*/
 
-@media (max-width: 1439px) {
-  .lodging {
-    flex-direction: column;
-  }
-  .lodging-block {
-    width: 100%;
-  }
-}
-
 /*ACTIVITIES*/
-
-.activities .card {
-  border: none;
-}
-
-.activities .card-list {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .activities > h2 {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-
-.activities .card-content {
-  padding: 1rem;
-}
-
 /*ACTIVITIES*/
 
 /*FOOTER*/
@@ -336,5 +327,13 @@ footer li {
   list-style-type: none;
   padding-bottom: 0.5rem;
 }
-
 /*FOOTER*/
+
+@media (max-width: 1439px) {
+  .lodging {
+    flex-direction: column;
+  }
+  .lodging-block {
+    width: 100%;
+  }
+}
