@@ -336,8 +336,49 @@ footer li {
   .lodging {
     flex-direction: column;
   }
-}
 
+  nav .menu a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    color: #000000;
+  }
+
+  nav .menu a:first-child {
+    color: #000000;
+    border-top: none;
+  }
+
+  button {
+    cursor: none;
+  }
+
+  .list-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .card.card-horizontal {
+    flex-direction: row;
+    align-items: stretch;
+    width: 182px;
+    height: 267px;
+  }
+
+  .lodging-city {
+    width: 100%;
+  }
+
+  .lodging-popular {
+    width: 100%;
+  }
+
+  .list-vertical {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /*mobile*/
 @media screen and (max-width: 768px) {
 }
