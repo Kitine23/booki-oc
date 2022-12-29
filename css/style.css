@@ -332,7 +332,7 @@ footer li {
 /*-------------MEDIA QUERIES----------------*/
 
 /*TABLET*/
-@media screen and (max-width: 992px) {
+@media screen and (width < 992px) {
   .lodging {
     flex-direction: column;
   }
@@ -347,10 +347,6 @@ footer li {
   nav .menu a:first-child {
     color: #000000;
     border-top: none;
-  }
-
-  button {
-    cursor: none;
   }
 
   .list-horizontal {
@@ -378,7 +374,64 @@ footer li {
     display: flex;
     flex-direction: row;
   }
+
+  .filters {
+    gap: 1rem;
+  }
 }
 /*mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (width < 768px) {
+  .filters button {
+    font-size: 0.7rem; /*11px*/
+  }
+
+  main {
+    padding: 0rem;
+  }
+
+  .filters h3 {
+    flex: 100%;
+  }
+
+  .lodging {
+    flex-direction: column-reverse;
+  }
+
+  .list-vertical {
+    flex-direction: column;
+  }
+
+  .list-horizontal {
+    flex-direction: column;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    padding-inline: 0;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+
+  .card.card-horizontal {
+    width: auto;
+    height: auto;
+  }
+
+  .card.card-portrait > img {
+    height: 134px;
+    width: 100%;
+  }
+
+  .activities {
+    padding-inline: 1.5rem;
+  }
+
+  .lodging-city {
+    background: none;
+  }
 }
