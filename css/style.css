@@ -46,8 +46,8 @@ h2 {
 /*------------- UTILS ------------------*/
 
 .container {
-  max-width: 1440px;
-  margin-inline: auto;
+  max-width: 1400px;
+  margin-inline: auto; /*centre l'élement horizontalement*/
 }
 
 /*CARDS*/
@@ -329,11 +329,15 @@ footer li {
 }
 /*FOOTER*/
 
-@media (max-width: 1439px) {
+/*-------------MEDIA QUERIES----------------*/
+
+/*TABLET*/
+@media screen and (max-width: 992px) {
   .lodging {
     flex-direction: column;
   }
-  .lodging-block {
-    width: 100%;
-  }
+}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
 }
