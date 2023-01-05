@@ -23,7 +23,9 @@
     <header class="container">
       <!--NAV-->
       <nav>
-        <img src="images/logo/Booki.png" alt="Logo Bookie" />
+        <div class="logo">
+          <img src="images/logo/Booki.png" alt="Logo Bookie" />
+        </div>
         <div class="menu">
           <a href="#">Hébergements</a>
           <a href="#">Activités</a>
@@ -32,46 +34,49 @@
       <!--NAV-->
     </header>
     <main class="container">
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre-ville ou en pleine nature</p>
-      <!--SEARCH-->
-      <div class="search-bar">
-        <div class="search-bar-icon"><i class="fas fa-location-dot"></i></div>
-        <input type="text" placeholder="Marseille, France" />
-        <button class="search-button">Rechercher</button>
+      <div class="options">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+        <!--SEARCH-->
+        <div class="search-bar">
+          <div class="search-bar-icon"><i class="fas fa-location-dot"></i></div>
+          <input type="text" placeholder="Marseille, France" />
+          <button class="search-button">
+            <i class="fas fa-magnifying-glass"></i>
+            <span>Rechercher</span>
+          </button>
+        </div>
+        <!--SEARCH-->
+        <!--FILTERS-->
+        <div class="filters">
+          <h3>Filtres</h3>
+          <div class="break"></div>
+          <button>
+            <i class="fas fa-money-bill-wave"></i>
+            Économique
+          </button>
+          <button>
+            <i class="fas fa-person"></i>
+            Familial
+          </button>
+          <div class="break"></div>
+          <button>
+            <i class="fas fa-heart"></i>
+            Romantique
+          </button>
+          <button>
+            <i class="fas fa-dog"></i>
+            Animaux autorisés
+          </button>
+        </div>
+        <!--FILTERS-->
+        <!--INFO-->
+        <div class="info">
+          <div class="info-icon"><i class="fas fa-info fa-fw"></i></div>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        <!--INFO-->
       </div>
-      <!--SEARCH-->
-      <!--FILTERS-->
-      <div class="filters">
-        <h3>Filtres</h3>
-
-        <button>
-          <i class="fas fa-money-bill-wave"></i>
-          Économique
-        </button>
-
-        <button>
-          <i class="fas fa-person"></i>
-          Familial
-        </button>
-
-        <button>
-          <i class="fas fa-heart"></i>
-          Romantique
-        </button>
-
-        <button>
-          <i class="fas fa-dog"></i>
-          Animaux autorisés
-        </button>
-      </div>
-      <!--FILTERS-->
-      <!--INFO-->
-      <div class="info">
-        <div class="info-icon"><i class="fas fa-info fa-fw"></i></div>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
-      <!--INFO-->
       <!--LODGING-->
       <div class="lodging">
         <section class="lodging-block lodging-city">
