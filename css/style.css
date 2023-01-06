@@ -61,6 +61,14 @@ h2 {
   box-shadow: 0 0 16px #0000002e;
 }
 
+.card h3 {
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.875rem; /*14px*/
+}
+
 .card > img {
   height: 124px;
   object-fit: cover;
@@ -74,11 +82,12 @@ h2 {
 .card.card-horizontal {
   flex-direction: row;
   align-items: stretch;
+  height: 144px;
 }
 
 .card.card-horizontal > img {
   width: 137px;
-  height: 144px;
+  height: 100%;
 }
 
 .card.card-horizontal .card-content {
@@ -362,8 +371,16 @@ footer li {
   .card.card-horizontal {
     flex-direction: row;
     align-items: stretch;
-    width: 182px;
-    height: 267px;
+    width: 100%;
+    height: 160px;
+  }
+
+  .card.card-horizontal > img {
+    width: 50%;
+  }
+
+  .card.card-portrait > img {
+    height: 211px;
   }
 
   .lodging-city {
@@ -381,6 +398,11 @@ footer li {
 
   .filters {
     gap: 1rem;
+  }
+
+  footer .footer-content {
+    gap: 3rem;
+    padding: 2rem 4rem;
   }
 }
 /*mobile*/
@@ -415,11 +437,6 @@ footer li {
   }
   footer .footer-content {
     flex-direction: column;
-  }
-
-  .card.card-horizontal {
-    width: auto;
-    height: auto;
   }
 
   .card.card-portrait > img {
@@ -512,5 +529,9 @@ footer li {
   nav .menu a:first-child {
     color: #0065fc;
     border-bottom: 3px solid #0065fc;
+  }
+
+  footer .footer-content {
+    gap: 2rem;
   }
 }
