@@ -345,7 +345,7 @@ footer li {
 /*-------------MEDIA QUERIES----------------*/
 
 /*TABLET*/
-@media screen and (width < 992px) {
+@media screen and (max-width: 991px) {
   .lodging {
     flex-direction: column;
   }
@@ -406,7 +406,7 @@ footer li {
   }
 }
 /*mobile*/
-@media screen and (width < 768px) {
+@media screen and (max-width: 767px) {
   main {
     padding: 0rem;
   }
