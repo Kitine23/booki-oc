@@ -50,6 +50,11 @@ h2 {
   margin-inline: auto; /*centre l'élement horizontalement*/
 }
 
+/*permet de forcer les éléments flex à passer à la ligne comme un <br>*/
+.break {
+  display: none;
+}
+
 /*CARDS*/
 .card {
   background: white;
@@ -481,6 +486,7 @@ footer li {
   .filters .break {
     flex-basis: 100%;
     height: 0;
+    display: block;
   }
 
   .filters {
