@@ -150,7 +150,6 @@ h2 {
 
 .list-horizontal > *,
 .list-vertical > * {
-  min-width: 0;
   flex: 1;
 }
 /*LAYOUTS*/
