@@ -151,7 +151,11 @@ h2 {
 
 .list-horizontal > *,
 .list-vertical > * {
-  flex: 1;
+  flex: 1; /* force tous les enfants de flexbox d'avoir la même largeur */
+}
+
+.grid > * {
+  min-width: 0; /* force tous les enfants de grid d'avoir la même largeur */
 }
 /*LAYOUTS*/
 
@@ -177,7 +181,8 @@ nav .menu a {
   color: #000000;
 }
 
-nav .menu a:first-child {
+nav .menu a:first-child,
+nav .menu a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
@@ -540,12 +545,11 @@ footer li {
     text-align: center;
   }
 
-  nav .menu a {
-    padding: 1.5rem;
-    border-bottom: 3px solid #f2f2f2;
+  nav .menu a:hover {
+    border-bottom: 3px solid #0065fc;
   }
 
-  nav .menu a:first-child {
+  nav .menu a:first-child:hover {
     color: #0065fc;
     border-bottom: 3px solid #0065fc;
   }
