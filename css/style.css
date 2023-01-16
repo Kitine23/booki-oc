@@ -179,9 +179,9 @@ nav .menu a {
   text-decoration: none;
   padding: 2rem 1rem;
   color: #000000;
+  border-top: 2px solid transparent; /*permet d'éviter que la page saute*/
 }
 
-nav .menu a:first-child,
 nav .menu a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
@@ -378,10 +378,10 @@ footer li {
     text-decoration: none;
     padding: 2rem 1rem;
     color: #000000;
+    border-top: none;
   }
 
-  nav .menu a:first-child {
-    color: #000000;
+  nav .menu a:hover {
     border-top: none;
   }
 
@@ -545,11 +545,11 @@ footer li {
     text-align: center;
   }
 
-  nav .menu a:hover {
-    border-bottom: 3px solid #0065fc;
+  nav .menu a {
+    border-bottom: 3px solid transparent;
   }
 
-  nav .menu a:first-child:hover {
+  nav .menu a:hover {
     color: #0065fc;
     border-bottom: 3px solid #0065fc;
   }
